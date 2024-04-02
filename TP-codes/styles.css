@@ -1,0 +1,72 @@
+/* Header container */
+.header {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Header right container */
+  .header-right {
+    float: right;
+  }
+  
+  /* Popup container */
+  .login-form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 20px;
+    top: 70px; /* Adjust as needed */
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Full-width input fields */
+  .container {
+    padding: 16px;
+  }
+  .a{
+    padding-top: 20px;
+  }
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Set login button width to 100% */
+  .login-btn {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Add hover effect to login button */
+  .login-btn:hover {
+    background-color: #45a049;
+  }
+  .register-btn {
+    width: auto; /* Adjust width as needed */
+    padding: 14px 20px;
+    margin-left: 10px; /* Adjust margin as needed */
+    border: none;
+    background-color: #008CBA; /* Change color as needed */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .register-btn:hover {
+    background-color: #005f7f; /* Change color as needed */
+  }

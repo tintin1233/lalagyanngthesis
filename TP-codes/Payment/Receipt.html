@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <link rel="stylesheet" href="Receipt.css">
+    <style>
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            .form-box, .form-box * {
+                visibility: visible;
+            }
+            .footer, .footer * {
+                display: none !important;
+            }
+            #customButton {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="form-box">
+            <form class="form">
+                <span class="title">Rent Receipt</span>
+                <header class="navbar"></header>
+                <span>Thank you for paying your bills!</span>
+                <div class="receipt-container">
+                    <h2></h2>
+                    <div id="shipping-info"></div>
+                    <div id="cart-summary"></div>
+                </div>
+                <span></span>
+            </form>
+        </div>
+    </center>
+    <footer class="footer">
+        <center>
+            <button onclick="window.print()">Print
+                <span>Print!</span>
+                </button>
+            <div style="margin-top: 10px;">
+            <button id="customButton">
+                <span class="text">Home</span>
+                <span>Home!</span>
+            </button>
+         </div>          
+        </center>
+    </footer>
+
+    <script src="Receipt.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,400;1,900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins";
+}
+img {
+    width: 100%;
+}
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: #082376;
+}
+
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+header .header-left .logo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
+    display: flex;
+}
+nav ul li a {
+    display: block;
+    color: #cfd9e0;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffffff;
+}
+nav .login-signup {
+    display: none;
+}
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+header .login-signup {
+    color: #cfe0db;
+    font-weight: bold;
+}
+header .login-signup a {
+    display: inline-block;
+    color: #617c81;
+    background: #e8ebe8;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #617c81;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: -1;
+    }
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+}
+@media only screen and (max-width: 500px) {
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+}
+
+
+.button2{
+    background-color: #008CBA;
+
+
+}
+
+.banner{
+width: 81.45%;
+height: 145%;
+position: absolute;
+top: 25%;
+left: 10px;
+color: #fff;
+}
+
+
+
+
+.col-2{
+position: relative;
+flex-basis: 70%;
+display:flex;
+align-items: center;
+left: -1px; 
+padding-left: 10px;
+margin-top: -85px;
+}
+
+.col-2 .controller{
+   width: 144%;
+
+}
+
+.color-box{
+ right:0;
+ top:0;
+ background: linear-gradient(#4e81f0, #120869);
+ position: absolute;
+ border-radius: 20px 0 0 20px;
+ height: 100%;
+ width: 80%;
+z-index: -1;
+transform: translateX(240px);
+}
+
+
+.banner ::after{
+    content: '';
+    width: 10px;
+    height: 50px;
+    background: linear-gradient(#6673ac,#151e52);
+    position: absolute;
+    left: -5px;
+    top: 5px;
+}
+
+/*.banner::after{
+  content: '';
+  width: 10px;
+  height: 50%;
+  background: linear-gradient(#6673ac,#151e52);
+  position: absolute;
+  left: -5px;
+  top: 5px;
+}
+.app-text{
+  width: 50%;
+  float: left;
+  padding-left: 50px;
+
+}*/
+
+.app-text h3{
+       margin-top: 2px;
+       font-size: 25px;
+       color: #111010;
+       font-weight:400;
+       letter-spacing: 0px;
+       text-transform: uppercase;
+}
+
+.app-text h1{
+     font-size:60px;
+     position: relative;
+     color: #1a3a69;
+     margin-top: -22px;
+     font-weight: 700;
+     line-height: 1;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     cursor:pointer;
+}
+
+.app-text p{
+ font-size: 19px;
+ margin: 30px 30px 30px 0;
+ letter-spacing: 1px;
+ color: #000;
+ padding-right: 100x;
+
+}
+
+.button-new{
+ width: 140px;
+ border:0;
+ padding: 12px 10px;
+ outline:none;
+ color: #fff;
+ background: linear-gradient(to right, #134d8f, #184980);
+ border-radius: 6px;
+ cursor:pointer;
+ transition: width 0.5s;
+}
+
+
+.button-new img{
+ width: 30px;
+ display:none;
+}
+
+.button-new:hover img{
+display:block;
+
+}
+
+
+.button-new:hover  {
+      width: 160px;
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+    
+    }
+    
+
+.trial{
+text-decoration: underline;
+color:blue;
+}
+
+.login-button{
+    background-color: #f0eded; 
+    border: none;
+    color: rgb(2, 7, 2);
+    padding: 9px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: width 0.5s;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+
+
+.login-same{
+    background-color: #f0eded; 
+    border: none;
+    color: rgb(2, 7, 2);
+    padding: 9px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: width 0.5s;
+    font-weight: 700;
+}
+
+
+.login-button:hover {
+    background-color: #e5ebe5; 
+    color: rgb(3, 3, 3);
+}
+
+.login-same:hover {
+    background-color: #e5ebe5; 
+    color: rgb(3, 3, 3);
+}
+
+.popup {
+position: absolute;
+top:50%;
+left:50%;
+opacity:0;
+transform:translate(-50%,-50%) scale(1.25);
+width:380px;
+padding:20px 30px;
+background:#f7f8f7;
+box-shadow: 2px 2px 5px 5px rgba(66, 31, 17, 0.15);
+border-radius:10px;
+transition:top 0ms ease-in-out 200ms, 
+          opacity 200ms ease-in-out 0ms,
+          transform 20ms ease-in-out 0ms,
+}
+
+
+.role {
+    position: absolute;
+    top:50%;
+    left:50%;
+    opacity:0;
+    width:380px;
+    padding:20px 30px;
+    background:#f7f8f7;
+    box-shadow: 2px 2px 5px 5px rgba(66, 31, 17, 0.15);
+    border-radius:10px;
+    transition:top 0ms ease-in-out 200ms, 
+              opacity 200ms ease-in-out 0ms,
+              transform 20ms ease-in-out 0ms,
+    }
+
+
+
+.popup.active {
+    top:50%;
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1);
+    transition:top 0ms ease-in-out 0ms, 
+    opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+}
+
+
+.role.active {
+    top:50%;
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1);
+    transition:top 0ms ease-in-out 0ms, 
+    opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+
+}
+
+
+
+
+
+
+
+.popup .close-btn {
+  position:absolute;
+  top:10px;
+  right:10px;
+  width:15px;
+  height:15px;
+  background:#0f178f;
+  color:#ffffff;
+  text-align:center;
+  line-height:15px;
+  border-radius:15px;
+  cursor:pointer;
+}
+
+.role .klose-btn {
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:15px;
+    height:15px;
+    background:#082376;
+    color:#ffffff;
+    text-align:center;
+    line-height:15px;
+    border-radius:15px;
+    cursor:pointer;
+
+
+} 
+
+
+
+.popup .form h2{
+  text-align:center;
+  color:#082376;
+  margin:10px 0px 20px;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+
+.role .no h2 {
+    text-align:center;
+    color:#050805;
+    margin:10px 0px 20px;
+    font-size: 25px;
+    font-weight: bold;
+  
+
+}
+
+
+
+
+.popup .form .form-element {
+margin:15px 0px;
+}
+
+
+.role .no .no-element {
+    margin:15px 0px;
+    }
+    
+    
+
+
+.popup .form .form-element label {
+  font-size:14px;
+  color:#222;
+}
+
+
+.role .no .no-element label {
+    font-size:14px;
+    color:#222;
+   
+  }
+  
+
+
+.popup .form .form-element  input[type="text"],
+
+
+.role .no .no-element  input[type="text"],
+
+
+.popup .form .form-element  input[type="password"] {
+  margin-top: 2px;
+  display:block;
+  width:100%;
+  padding:10px;
+  outline:none;
+  border:1px solid #aaa;
+  border-radius:5px;   
+}
+
+
+
+
+.role .no .no-element  input[type="password"] {
+    margin-top: -5px;
+    display:block;
+    width:100%;
+    padding:8px;
+    outline:none;
+    border:1px solid #aaa;
+    border-radius:5px;   
+  }
+  
+
+
+
+
+
+
+
+.popup .form .form-element  input[type="checkbox"] {
+ margin-right:5px;
+}
+
+.popup .form .form-element  button {
+    width:100%;
+    height:40px;
+    border:none;
+    outline:none;
+    font-size:16px;
+    background:#222222;
+    color:#693838;
+    border-radius:10px;
+    cursor:pointer;
+
+}
+
+
+
+.role .no .no-element  button {
+    width:100%;
+    height:40px;
+    border:none;
+    outline:none;
+    font-size:16px;
+    background:#222222;
+    color:#f5f5f5;
+    border-radius:10px;
+    cursor:pointer;
+
+}
+
+
+
+.btn-sign{
+    width:100%;
+    height:40px;
+    border:none;
+    outline:none;
+    font-size:16px;
+    background:#1c117a;
+    color:#fdfdfd;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:13px;
+}
+
+
+.btn-reg{
+    width:100%;
+    height:40px;
+    border:none;
+    outline:none;
+    font-size:16px;
+    background:#0f1b86;
+    color:#fdfdfd;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:13px;
+}
+
+
+
+
+
+.trial{
+display:block;
+text-align:right;
+font-size:15px;
+color:#16288b;
+text-decoration:none;
+font-weight:600;
+margin-bottom: 23px;
+margin-top: 20px;
+
+
+}
+
+.trials{
+    
+    text-align:right;
+    font-size:15px;
+    color:#082376;
+    text-decoration:none;
+    font-weight:600;
+    margin-bottom: 23px;
+    margin-top: 20px;
+    
+    
+    }
+    
+
+  
+  /* Header right container */
+  .header-right {
+    float: right;
+  }
+  
+  /* Popup container */
+  .login-form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 20px;
+    top: 70px; /* Adjust as needed */
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Full-width input fields */
+  .container {
+    padding: 16px;
+  }
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Set login button width to 100% */
+  .login-btn {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Add hover effect to login button */
+  .login-btn:hover {
+    background-color: #45a049;
+  }
